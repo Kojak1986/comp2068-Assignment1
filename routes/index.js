@@ -6,10 +6,24 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Karl Kovacs'});
 });
 
-// GET Work Page
-router.get('/work', function (req, res, next) {
+//GET About Me
+router.get('/about', function (req, res, next) {
 
-  res.render('work', {title: 'Work'});
+  res.render('about', {title: 'About Me'});
+
+});
+
+//GET Services
+router.get('/services', function (req, res, next) {
+
+  res.render('services', {title: 'Services'});
+
+});
+
+// GET Products Page
+router.get('/products', function (req, res, next) {
+
+  res.render('products', {title: 'Products'});
 
 });
 
@@ -19,6 +33,11 @@ router.get('/contact', function (req, res, next) {
   res.render('contact', {title: 'Contact'});
 
 });
+
+
+
+
+
 
 
 module.exports = router;
