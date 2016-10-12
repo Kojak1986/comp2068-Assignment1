@@ -16,3 +16,8 @@ a {
   background: linear-gradient(#c8e5bc, #b9def0); /* Standard syntax */
 
 }
+
+.paragraph
+{
+  font-size: large;
+}

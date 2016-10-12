@@ -1,15 +1,19 @@
 <% include partials/header.ejs%>
+
+<!-- Dynamicly grab title -->
 <h1><%= title %></h1>
 
 
 <div class="col-md-offset-4">
-<form class="form-horizontal" method="post">
+
+    <!-- Basic form with text area -->
+<form action="send.ejs" class="form-horizontal" method="post">
     Your name<br>
-     <input type="text" name="name"><br>
+     <input class="panel-body" type="text" name="name"><br>
     Your e-mail<br>
-    <input type="text" name="email"><br>
+    <input class="panel-body" type="text" name="email"><br>
     Message<br>
-    <textarea  name="message" rows="10" cols="50" ></textarea><br>
+    <textarea class="panel-body" name="message"  rows="10" cols="50" ></textarea><br>
     <input  class="btn btn-default" type="submit" value="Send">
     <input class="btn btn-default" type="reset" value="Clear">
 </form>
