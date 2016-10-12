@@ -1,21 +1,19 @@
 <% include partials/header.ejs%>
 <h1><%= title %></h1>
-<p>Please Enter Your Info</p>
 
-<form>
-    <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
-    </div>
-    <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
-    </div>
-    <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+
+<div class="col-md-offset-4">
+<form class="form-horizontal" method="post">
+    Your name<br>
+     <input type="text" name="name"><br>
+    Your e-mail<br>
+    <input type="text" name="email"><br>
+    Message<br>
+    <textarea  name="message" rows="10" cols="50" ></textarea><br>
+    <input  class="btn btn-default" type="submit" value="Send">
+    <input class="btn btn-default" type="reset" value="Clear">
 </form>
+</div>
 
 
 <% include partials/footer.ejs %>

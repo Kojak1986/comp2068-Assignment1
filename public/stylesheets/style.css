@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+.panel-body{
+  background-color: #c8e5bc;
+}
+
+.navcolour{
+
+  background: linear-gradient(#c8e5bc, #b9def0); /* Standard syntax */
+
+}
