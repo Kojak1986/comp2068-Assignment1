@@ -6,14 +6,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Karl Kovacs'});
 });
 
-//GET About Me
+//GET About Me Page
 router.get('/about', function (req, res, next) {
 
   res.render('about', {title: 'About Me'});
 
 });
 
-//GET Services
+//GET Services Page
 router.get('/services', function (req, res, next) {
 
   res.render('services', {title: 'Services'});
@@ -27,7 +27,7 @@ router.get('/products', function (req, res, next) {
 
 });
 
-// GET Contact
+// GET Contact Page
 router.get('/contact', function (req, res, next) {
 
   res.render('contact', {title: 'Contact'});
